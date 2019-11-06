@@ -1,15 +1,8 @@
-#!/bin/bash -x
+#!/bin/bash
 
 DEBURL="https://d1.music.126.net/dmusic/netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb"
 DEB="netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb"
 DIR="netease-cloud-music-1.2.1"
-
-RPM="netease-cloud-music-1.2.1-2.x86_64.rpm"
-
-__error() {
-    echo "Error: " "$1" >&2
-    exit 1
-}
 
 __has() {
     type "$1" >/dev/null 2>&1
